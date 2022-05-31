@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 $prim-color-gray: #606060ff;
 $sec-color-green: #d6ed17ff;
 $ter-color-white: #fff;
@@ -16,14 +17,13 @@ header {
 .logo {
   font-size: 3rem;
   color: $prim-color-gray;
-  font-family: 'Montserrat', sans-serif;
-
-  .super {
-    color: $ter-color-white;
-    font-size: 2rem;
-    vertical-align: super;
-  }
+  font-family: 'Macondo', cursive;
 }
+  .logo-1 {
+    color: $ter-color-white;
+    // vertical-align: super;
+  }
+
 
 .nav {
   padding: 0.5rem 0;

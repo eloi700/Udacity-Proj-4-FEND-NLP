@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
 $prim-color-gray: #606060ff;
 $sec-color-green: #d6ed17ff;
 $ter-color-white: #fff;
@@ -64,14 +66,18 @@ ul a:hover {
 
 .designed {
   font-style: italic;
+  font-family: $font-name;
+}
+
+.copyright{
+  font-family: 'Macondo', cursive;
 }
 
 .copyright,
 .designed {
-  padding-top: 0.5rem;
+  padding-top: 0.8rem;
   text-align: center;
   font-size: 1rem;
-  font-family: $font-name;
   color: $prim-color-gray;
   opacity: 0.75;
   margin-bottom: 0;

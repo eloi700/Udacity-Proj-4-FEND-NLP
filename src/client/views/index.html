@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Test</title>
-    <link rel="stylesheet" href="/main.css" />
-  </head>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <title>Document</title>
+</head>
   <body>
     <header>
-      <div class="logo">O<span class="super">2</span>HA</div>
+      <div class="logo">Hu<span class="logo-1">rr</span>ah</div>
       <div class="nav">
         <a href="#">Home</a>
         <a href="#">Services</a>
@@ -19,16 +20,18 @@
     </header>
 
     <main>
+      <div class="title">Language Identification</div>
+      <p class="instructions">Please enter word/words you wish to check.</p>
       <section>
-        <form class="" onsubmit="return Client.handleSubmit(event)">
-            <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-            <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+        <form class="lang-eval" onsubmit="return Client.handleSubmit(event)">
+            <input id="word" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter word/s:">
+            <input type="submit" value="Evaluate" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
         </form>
         <section>
 
       <section>
-        <strong>Form Results:</strong>
-        <div id="results"></div>
+        <div class="results">Language Name:</div>
+        <div id="lang_results"></div>
       </section>
     </main>
     <footer class="footer-form">
@@ -46,7 +49,7 @@
           <li class="list-inline-item"><a href="#">Contact</a></li>
       </ul>
       <p class="designed">Designed by Ma. Cielo Tennert</p>
-      <p class="copyright">O<span class="super">2</span>A ©2022</p>
+      <p class="copyright">Hurrah! ©2022</p>
     </footer>
     <script>
       // Check if service workers are supported
@@ -57,10 +60,6 @@
           });
       }
   </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap');
-    </style>
-
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>

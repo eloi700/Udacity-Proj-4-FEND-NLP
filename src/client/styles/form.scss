@@ -1,12 +1,17 @@
+$prim-color-gray: #606060ff;
+$sec-color-green: #d6ed17ff;
+$ter-color-white: #fff;
+$font-name: Arial, Helvetica, sans-serif;
+
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+  border: 1px solid $sec-color-green;
+  border-radius: 3px;
+  padding: 2rem 4rem;
 }
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+#word {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

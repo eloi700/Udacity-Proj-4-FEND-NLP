@@ -2,14 +2,16 @@ function handleSubmit(event) {
   event.preventDefault();
 
   // check what text was put into the form field
-  let formText = document.getElementById("name").value;
+  const formText = document.getElementById("word").value;
   Client.checkForName(formText);
 
   console.log("::: Form Submitted :::");
-  fetch("http://localhost:8081/test")
+  fetch("http://localhost:8081/test?" + new URLSearchParams({
+    words: formText
+  }))
     .then((res) => res.json())
     .then(function (res) {
-      document.getElementById("results").innerHTML = res.agreement;
+      document.getElementById("lang_results").innerHTML = res.name;
     });
 }
 
