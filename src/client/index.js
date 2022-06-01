@@ -8,13 +8,11 @@ import './styles/main.scss';
 import './styles/footer.scss';
 import './styles/form.scss';
 
-console.log(checkForName);
-
 export {
     checkForName,
     handleSubmit
 }
 
 
-alert("I EXIST")
-console.log("CHANGE!!");
+// alert("I EXIST")
+// console.log("CHANGE!!");

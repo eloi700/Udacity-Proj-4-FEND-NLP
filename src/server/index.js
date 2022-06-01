@@ -29,14 +29,9 @@ app.listen(8081, function () {
 app.get('/test', function (request, response) {
 
     fetch(`https://api.meaningcloud.com/lang-4.0/identification?key=${process.env.API_KEY}&txt=${request.query.words}`)
-    // fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&lang=en&txt=Main dishes were quite good, but desserts were too sweet for me.`)
     .then(resp => resp.json())
     .then(jsonData => {
-        // jsonData.language_list.name;
         response.send(jsonData.language_list[0]);
         // console.log('response', jsonData.language_list[0].name);
-        // if score_tag === N+ || N{
-        //     response.sendStatus(403);
-        // }
     })
 })

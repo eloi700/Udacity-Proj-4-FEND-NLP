@@ -11,7 +11,29 @@ form {
 
 #word {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+
+}
+
+input[type="submit"]{
+    font-size: 1rem;
+    padding: .5rem;
+    background: linear-gradient(to bottom, #eee, #d6ed17ff);
+    border: none;
+    width: 10rem;
+    transform: translateX(8rem);
+    border-radius: 1rem;
+    color: $prim-color-gray;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    &:hover{
+      color: $prim-color-gray;
+      background: $sec-color-green;
+    }
 }
