@@ -27,7 +27,6 @@ app.listen(8081, function () {
 })
 
 app.get('/test', function (request, response) {
-
     fetch(`https://api.meaningcloud.com/lang-4.0/identification?key=${process.env.API_KEY}&txt=${request.query.words}`)
     .then(resp => resp.json())
     .then(jsonData => {

@@ -1,4 +1,5 @@
 function checkForName(inputText) {
+    document.getElementById("lang_results").innerHTML = res.name;
 
     // console.log("::: Running checkForName :::", inputText);
     // let names = [
@@ -12,8 +13,6 @@ function checkForName(inputText) {
     // if(names.includes(inputText)) {
     //     alert("Welcome, Captain!")
     // }
-
-
 }
 
 export { checkForName }
