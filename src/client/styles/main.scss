@@ -1,3 +1,42 @@
+$prim-color-gray: #606060ff;
+$sec-color-green: #d6ed17ff;
+$ter-color-white: #fff;
+$font-name: Arial, Helvetica, sans-serif;
+
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
-    background-color: cadetblue;
+    @include center;
+    background: #606060ff;
+}
+.title, .instructions{
+    position: absolute;
+    text-align: center;
+    top: 10rem;
+    font-family: $font-name;
+    font-size: 3rem;
+    color: $ter-color-white;
+}
+
+.instructions{
+    color: $sec-color-green;
+    font-size: 1rem;
+    top: 15rem;
+}
+
+.results{
+    font-family: $font-name;
+    font-size: 1rem;
+    color:$sec-color-green;
+}
+
+#lang_results{
+    font-family: $font-name;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    color:$ter-color-white;
 }

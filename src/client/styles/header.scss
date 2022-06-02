@@ -1,5 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+$prim-color-gray: #606060ff;
+$sec-color-green: #d6ed17ff;
+$ter-color-white: #fff;
+$font-name: Arial, Helvetica, sans-serif;
+
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background: #d6ed17ff;
+  border-radius: 0 0 2rem 2rem;
+  margin-bottom: -2rem;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 3rem;
+  color: $prim-color-gray;
+  font-family: 'Macondo', cursive;
+}
+  .logo-1 {
+    color: $ter-color-white;
+  }
+
+
+.nav {
+  padding: 0.5rem 0;
+  list-style: none;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  color: $prim-color-gray;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: $font-name;
+
+  &:hover {
+    background: $prim-color-gray;
+    color: $ter-color-white;
+    text-shadow: 0 0 0.3rem #000;
+    border-radius: 0 0 1rem 1rem;
+    border-top: 0.2rem solid $ter-color-white;
+  }
 }

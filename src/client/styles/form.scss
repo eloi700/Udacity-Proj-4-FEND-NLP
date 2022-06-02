@@ -1,12 +1,39 @@
+$prim-color-gray: #606060ff;
+$sec-color-green: #d6ed17ff;
+$ter-color-white: #fff;
+$font-name: Arial, Helvetica, sans-serif;
+
 form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
+  border: 1px solid $sec-color-green;
+  border-radius: 3px;
+  padding: 2rem 4rem;
 }
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+#word {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: none;
+
+}
+
+input[type="submit"]{
+    font-size: 1rem;
+    padding: .5rem;
+    background: linear-gradient(to bottom, #eee, #d6ed17ff);
+    border: none;
+    width: 10rem;
+    transform: translateX(8rem);
+    border-radius: 1rem;
+    color: $prim-color-gray;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+
+    &:hover{
+      color: $prim-color-gray;
+      background: $sec-color-green;
+    }
 }
