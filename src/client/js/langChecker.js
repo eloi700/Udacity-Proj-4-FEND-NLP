@@ -1,6 +1,6 @@
 async function checkLanguage(inputText) {
   return fetch(
-    "http://localhost:8081/test?" +
+    "/test?" +
       new URLSearchParams({
         words: inputText,
       })
