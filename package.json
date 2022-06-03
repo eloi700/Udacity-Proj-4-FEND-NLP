@@ -5,9 +5,11 @@
   "scripts": {
     "start": "node src/server/index.js",
     "test": "jest --env=jsdom",
+    "build": "webpack --config webpack.prod.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
   },
+  "heroku-run-build-script": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
