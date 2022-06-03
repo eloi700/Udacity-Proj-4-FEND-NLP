@@ -13,4 +13,3 @@ export {
     handleSubmit
 }
 
-alert("I EXIST")
