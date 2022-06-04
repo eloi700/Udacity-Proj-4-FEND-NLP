@@ -12,7 +12,12 @@ describe("Language Checker", () => {
     global.fetch = jest.fn(() =>
       Promise.resolve({
         ok: true,
-        json: () => Promise.resolve({ name: "English" }),
+        json: () =>
+          Promise.resolve({
+            name: "English",
+            language: "en",
+            relevance: 100,
+          }),
       })
     );
     global.alert = () => {};
@@ -20,9 +25,11 @@ describe("Language Checker", () => {
 
     // call the function
     await checkLanguage("hello").then(() => {
-    // check the result
+      // check the result
       expect(document.getElementById("lang_results").textContent).toBe(
-        "English"
+        `Langunage Code: en
+Language Name: English
+Relevance: 100`
       );
     });
   });

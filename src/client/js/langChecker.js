@@ -14,7 +14,11 @@ async function checkLanguage(inputText) {
       });
     })
     .then(function (res) {
-      document.getElementById("lang_results").textContent = res.name;
+      document.getElementById(
+        "lang_results"
+      ).innerHTML = `<div>Langunage Code: ${res.language}</div>
+<div>Language Name: ${res.name}</div>
+<div>Relevance: ${res.relevance}</div>`;
 
       res.name === "Undetermined"
         ? alert(

@@ -24,13 +24,13 @@
       <p class="instructions">Please enter word/s you wish to check.</p>
       <section>
         <form class="lang-eval" onsubmit="return Client.handleSubmit(event)">
-            <input id="word" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter word/s:">
+            <input id="word" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter word/s:" required>
             <input type="submit" value="Evaluate" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
         </form>
-        <section>
+      <section>
 
       <section>
-        <div class="results">Language Name:</div>
+        <div class="results">Results:</div>
         <div id="lang_results"></div>
       </section>
     </main>
