@@ -4,9 +4,9 @@
 
 import { handleSubmit } from "../src/client/js/formHandler";
 
-// The describe() function takes two arguments - a string description, and a test suite as a callback function.
+// The describe() function
 describe("Evaluate Functionality", () => {
-  // The test() function has two arguments - a string description, and an actual test as a callback function.
+  // The actual test as a callback function
   test("Handle Submit", () => {
     expect(handleSubmit);
   });

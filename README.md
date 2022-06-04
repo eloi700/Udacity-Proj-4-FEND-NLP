@@ -8,4 +8,5 @@ Before anything else, I set up first the project by installing npm, the required
 
 API also required in the project hence, setting it up using MeaningCloud API has been used.  I provided also Environment Variables to hide the key publicly by installing dotenv and creating .env file in the root of this project.
 
-In addition to above, project was also enhanced using the rubric provided, test using jest framework, setting up service workers in webpack and deployment.
+In addition to above, project was also enhanced, test using jest framework, set up service workers (web app offline) and deployed it via Heroku.
+To check, you can visit https://pure-wildwood-80824.herokuapp.com
