@@ -22,10 +22,10 @@ async function checkLanguage(inputText) {
 
       res.name === "Undetermined"
         ? alert(
-            "Sorry, that word/s doesn't exist in my vocabulary. Try again :)"
+            "Sorry, that word/s doesn't exist."
           )
         : alert(
-            "That word/s exist. Click OK to see the name of language below."
+            "That word/s or URL exist."
           );
     })
     .catch((error) => {
