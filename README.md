@@ -1,4 +1,4 @@
-## Project 4 - Evaluate a News Article with Natural Language Processing
+## Project 4 -Language Identification & URL Evaluation with Natural Language Processing
 
 The project is building a web tool that allows users to run Natural Language Processing (NLP) on news article or blogs.
 
